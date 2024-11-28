@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vida Marinha: Explorando o Oceano</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Vida Marinha: Explorando o Oceano</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2 class="titulo-secao">Bem-vindo ao Mundo Marinho</h2>
+      <p class="texto-intro">
+        Bem-vindo ao site "Vida Marinha: Explorando o Oceano"! Este espaço foi criado para celebrar a riqueza e a diversidade da vida marinha, explorando as incríveis criaturas que habitam os oceanos e destacando a importância de preservarmos esse ecossistema tão precioso. Aqui, você encontrará uma galeria com imagens de animais marinhos, curiosidades sobre as espécies e conteúdos educativos que nos ajudam a entender melhor o universo submerso. Navegue pelas páginas e mergulhe nesse mundo fascinante, cheio de cores, formas e vida. Nosso objetivo é inspirar a valorização e a proteção dos mares, promovendo o conhecimento e a admiração pelo ambiente marinho.
+      </p>
+    </section>
+
+    <section id="galeria">
+      <h2 class="titulo-secao">Galeria</h2>
+      <div class="grade-galeria">
+        <div class="item-galeria">
+          <img src="png/araia.png" alt="Arraia">
+          <div class="legenda-galeria">Arraia - Elegância sob as ondas</div>
+          <p class="descricao-animal">
+            A arraia é um peixe cartilaginoso conhecido por sua forma achatada e nadadeiras em forma de asa. São criaturas graciosas que deslizam pelos oceanos com movimentos ondulantes. Podem ser encontradas em diversos habitats marinhos, desde águas rasas até profundidades consideráveis.
+          </p>
+        </div>
+        <div class="item-galeria">
+          <img src="png/baiacu.png" alt="Baiacu">
+          <div class="legenda-galeria">Baiacu - A defesa inflável do mar</div>
+          <p class="descricao-animal">
+            O baiacu é um peixe fascinante conhecido por sua capacidade única de inflar o corpo quando se sente ameaçado. Possui uma toxina potente em seus órgãos internos como mecanismo de defesa. Apesar de sua aparência peculiar, é uma espécie importante para o equilíbrio marinho.
+          </p>
+        </div>
+        <div class="item-galeria">
+          <img src="png/cavalomarinho.png" alt="Cavalo-Marinho">
+          <div class="legenda-galeria">Cavalo-Marinho - Uma criatura graciosa</div>
+          <p class="descricao-animal">
+            O cavalo-marinho é uma das criaturas mais peculiares dos oceanos. Com sua cabeça semelhante à de um cavalo e cauda preênsil, são mestres do disfarce. São únicos no reino animal, pois os machos são responsáveis por gestar os filhotes em uma bolsa especial.
+          </p>
+        </div>
+        <div class="item-galeria">
+          <img src="png/tartaruga.png" alt="Tartaruga">
+          <div class="legenda-galeria">Tartaruga Marinha - Símbolo duradouro</div>
+          <p class="descricao-animal">
+            O cavalo-marinho é uma das criaturas mais peculiares dos oceanos. Com sua cabeça semelhante à de um cavalo e cauda preênsil, são mestres do disfarce. São únicos no reino animal, pois os machos são responsáveis por gestar os filhotes em uma bolsa especial.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2 class="titulo-secao">Sobre</h2>
+      <p class="conteudo-sobre">
+        Este site foi desenvolvido como parte de um projeto escolar com o objetivo de aprimorar minhas habilidades em desenvolvimento web, unindo teoria e prática em uma proposta criativa e educativa. Ao mesmo tempo, ele reflete minha admiração pelo oceano e pelas inúmeras formas de vida que ele abriga. Por meio deste trabalho, procuro não apenas demonstrar o aprendizado técnico, mas também compartilhar informações sobre a biodiversidade marinha e conscientizar sobre sua importância para o equilíbrio do planeta. O oceano é um lugar mágico, repleto de mistérios e belezas, e este projeto é uma oportunidade de combinar o aprendizado com a paixão por esse tema tão inspirador.
+      </p>
+    </section>
+
+    <section id="contato">
+      <h2 class="titulo-secao">Contato</h2>
+      <form class="formulario-contato" onsubmit="return validarFormulario(event)">
+        <div class="grupo-formulario">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          <div class="erro" id="erro-nome"></div>
+        </div>
+        <div class="grupo-formulario">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <div class="erro" id="erro-email"></div>
+        </div>
+        <div class="grupo-formulario">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          <div class="erro" id="erro-mensagem"></div>
+        </div>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <div class="modal" id="modal-imagem">
+    <span class="fechar-modal">&times;</span>
+    <img id="imagem-modal" src="" alt="Visualização da imagem">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
